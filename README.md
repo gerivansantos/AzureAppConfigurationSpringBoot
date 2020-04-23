@@ -55,3 +55,10 @@ configurationClient.setConfigurationSetting(key2, "new_label", "new_value");
 SettingSelector selector = new SettingSelector().setKeyFilter(key + "," + key2);
 PagedIterable<ConfigurationSetting> settings = configurationClient.listConfigurationSettings(selector);
 ```
+
+### How to use
+#### Set mandatory environment variables
+```
+APP_CONFIGURATION_CONNECTION_STRING=[AZURE_CONNECTION_STRING]
+SERVICE_LABEL=[LABEL_AZURE]
+```
